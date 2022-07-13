@@ -1,5 +1,5 @@
 def main():
-    user_input = str(input())
+    user_input = str(input("Please input something with :) or :( "))
     convert(user_input)
 
 
