@@ -6,8 +6,8 @@ def main():
 def convert(user_input):
     splitted_input = user_input.split(" ")
     emojis = {
-        ":)": "😀",
-        ":(": "😞"
+        ":)": "🙂",
+        ":(": "🙁"
     }
     outcome = " "
     for word in splitted_input:
