@@ -11,3 +11,5 @@ def check(greeting):
         print("$20")
     else:
         print("$100")
+
+main()
