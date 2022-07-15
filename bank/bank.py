@@ -13,7 +13,7 @@ def check(greeting):
         a = "$20"
         return a
     else:
-        a = "$20"
+        a = "$100"
         return a
 
 main()
