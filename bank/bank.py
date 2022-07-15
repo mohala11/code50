@@ -1,3 +1,3 @@
 text = "Greeting: "
-greeting = str(input(text))
+greeting = str.lower(input(text).strip())
 test = greeting.
