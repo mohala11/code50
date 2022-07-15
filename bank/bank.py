@@ -2,15 +2,18 @@ def main():
     text = "Greeting: "
     greeting = str.lower(input(text).strip())
     check(greeting)
-    print()
+    print(a)
 
 
 def check(greeting):
     if greeting.startswith("hello"):
-        return "$0"
+        a = "$0"
+        return a
     elif greeting.startswith("h"):
-        return "$20"
+        a = "$20"
+        return a
     else:
-        return "$100"
+        a = "$20"
+        return a
 
 main()
