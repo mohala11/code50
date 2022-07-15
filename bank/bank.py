@@ -4,6 +4,7 @@ def main():
     greeting = str.lower(input(text).strip())
 
 
+def check(greeting)
 
 
 if greeting.startswith("hello"):
