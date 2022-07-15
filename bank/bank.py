@@ -4,13 +4,13 @@ def main():
     check(greeting)
 
 
-
-def check(g):
-    if g.startswith("hello"):
+def check(greeting):
+    if greeting.startswith("hello"):
         print("$0")
-    elif g.startswith("h"):
+    elif greeting.startswith("h"):
         print("$20")
     else:
         print("$100")
+
 
 main()
