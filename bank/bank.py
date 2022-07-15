@@ -7,13 +7,10 @@ def main():
 
 def check(greeting):
     if greeting.startswith("hello"):
-        a = "$0"
-        return a
+        return "$0"
     elif greeting.startswith("h"):
-        a = "$20"
-        return a
+        return "$20"
     else:
-        a = "$100"
-        return a
+        return "$100"
 
 main()
