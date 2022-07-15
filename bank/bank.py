@@ -2,6 +2,8 @@
 def main():
     text = "Greeting: "
     greeting = str.lower(input(text).strip())
+    check(greeting)
+
 
 
 def check(greeting):
