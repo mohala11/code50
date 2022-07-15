@@ -5,10 +5,10 @@ def main():
 
 
 
-def check(greeting):
-    if greeting.startswith("hello"):
+def check(g):
+    if g.startswith("hello"):
         print("$0")
-    elif greeting.startswith("h"):
+    elif g.startswith("h"):
         print("$20")
     else:
         print("$100")
