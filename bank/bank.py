@@ -1,8 +1,8 @@
 def main():
     text = "Greeting: "
     greeting = str.lower(input(text).strip())
-    check(greeting)
-    print(a)
+    result = check(greeting)
+    print(result)
 
 
 def check(greeting):
