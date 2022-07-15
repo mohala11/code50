@@ -1,5 +1,11 @@
-text = "Greeting: "
-greeting = str.lower(input(text).strip())
+
+def main():
+    text = "Greeting: "
+    greeting = str.lower(input(text).strip())
+
+
+
+
 if greeting.startswith("hello"):
     print("$0")
 elif greeting.startswith("h"):
