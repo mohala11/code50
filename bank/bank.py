@@ -2,7 +2,7 @@ def main():
     text = "Greeting: "
     greeting = str.lower(input(text).strip())
     check(greeting)
-    print(return)
+    print()
 
 
 def check(greeting):
@@ -12,6 +12,5 @@ def check(greeting):
         return "$20"
     else:
         return "$100"
-
 
 main()
