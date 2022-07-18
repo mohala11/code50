@@ -9,4 +9,19 @@ def main():
 
 
 def mathandmagic(x, y, z):
-    if y == 
+    if y == "+":
+        d = x + z
+        return d
+    elif y == "-":
+        d = x - z
+        return d
+    elif y == "*":
+        d = x * z
+        return d
+    elif y == "/":
+        d = x * z
+    else:
+        return "Enter correct expression!"
+
+
+main()
