@@ -1,2 +1,2 @@
 text = "Expression: "
-userinput = 
+userinput = tuple(input)
