@@ -19,7 +19,7 @@ def mathandmagic(x, y, z):
         d = x * z
         return d
     elif y == "/":
-        d = x * z
+        d = x / z
     else:
         return "Enter correct expression!"
 
