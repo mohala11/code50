@@ -9,4 +9,4 @@ def main():
 
 
 def mathandmagic(x, y, z):
-    if 
+    if y == 
