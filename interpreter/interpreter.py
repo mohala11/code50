@@ -1,2 +1,4 @@
 text = "Expression: "
-userinput = tuple(input)
+userinput = input(text)
+mathtuple = tuple(map(userinput.split(" ")))
+print(mathtuple)
