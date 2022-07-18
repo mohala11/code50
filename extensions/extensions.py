@@ -8,7 +8,7 @@ def main():
 def check(file_name):
     if file_name.endswith(".gif"):
         return "image/gif"
-    elif file_name.endswith(".jpg", ".jpeg"):
+    elif file_name.endswith(".jpg"):
         return "image/jpeg"
     elif file_name.endswith(".png"):
         return "image/png"
