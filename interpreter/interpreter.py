@@ -1,3 +1,3 @@
 text = "Expression: "
-userinput = input(text)
-print(mathtuple)
+userinput = input(text).split(" ")
+print(userinput)
