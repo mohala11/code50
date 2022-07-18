@@ -8,7 +8,7 @@ def main():
     print(result)
 
 
-def mathandmagic(x, y, z):
+def mathandmagic():
     if y == "+":
         d = x + z
         return d
