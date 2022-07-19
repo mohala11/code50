@@ -1,8 +1,10 @@
 def main():
-    time = str()
+    text = "What time is it? "
+    time = float(input(text))
+    print(time)
 
 
-def convert(time):
+#def convert(time):
     ...
 
 
