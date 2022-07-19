@@ -7,9 +7,11 @@ def main():
     result = convert(time)
     if result >= 7.0 and result <= 8.0 and jopka == "a.m.":
         print("breakfast time")
-    elif result >= 12.0 and result <= 13.0:
+    elif result >= 12.0 and result <= 12.9 and jopka == "a.m.":
         print("lunch time")
-    elif result >= 18.0 and result <= 19.0:
+    elif result == 1 and jopka == "p.m.":
+        print("lunch time")
+    elif result >= 6.0 and result <= 7.0 and jopka == "p.m.":
         print("dinner time")
     else:
         print()
