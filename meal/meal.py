@@ -15,8 +15,8 @@ def main():
 
 def convert(time):
     hours, minutes = time.split(":")
-    floatminutes = minutes / 60
-    floattime = hours + floatminutes
+    floatminutes = float(minutes) / 60
+    floattime = float(hours) + floatminutes
     return floattime
 
 
