@@ -5,7 +5,7 @@ def main():
     if result >= 7.0 and result <= 8.0:
         print("breakfast time")
     elif result >= 12.0 and result <= 13.0:
-        print("meal time")
+        print("lunch time")
     elif result >= 18.0 and result <= 19.0:
         print("dinner time")
     else:
