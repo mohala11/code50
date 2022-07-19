@@ -1,8 +1,11 @@
 def main():
     text = "What time is it? "
-    time = str(input(text))
+    userinput = str(input(text))
+    timesplit = userinput.split(" ")
+    time = timesplit[0]
+    jopka = timesplit[1]
     result = convert(time)
-    if result >= 7.0 and result <= 8.0:
+    if result >= 7.0 and result <= 8.0 and jopka == "a.m.":
         print("breakfast time")
     elif result >= 12.0 and result <= 13.0:
         print("lunch time")
