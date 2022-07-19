@@ -1,11 +1,12 @@
 def main():
     text = "What time is it? "
-    time = float(input(text))
-    print(time)
+    time = str(input(text))
+    result = convert(time)
+        if result
 
 
-#def convert(time):
-    ...
+def convert(time):
+    
 
 
 if __name__ == "__main__":
