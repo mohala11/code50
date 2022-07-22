@@ -9,9 +9,9 @@ def main():
         print("breakfast time")
     elif result >= 12.0 and result <= 12.99 and is_am_time:
         print("lunch time")
-    elif result == 1 and !is_am_time:
+    elif result == 1 and not is_am_time:
         print("lunch time")
-    elif result >= 6.0 and result <= 7.0 and !is_am_time:
+    elif result >= 6.0 and result <= 7.0 and not is_am_time:
         print("dinner time")
     else:
         print()
