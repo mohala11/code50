@@ -7,16 +7,16 @@ def main():
 
 
 def convert(s):
+    outcome = " "
     for i in s:
         if i.isupper:
-            i = i.lower()
+            i = "_" + i.lower()
             return i
         else:
             return i
 
 
-    for i in s:
-       print(i)
+
 
 
 main()
