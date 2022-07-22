@@ -9,7 +9,11 @@ def main():
 def convert(s):
     for i in s:
         if i.isupper:
-            i = 
+            i = lower(i)
+            return i
+        elif:
+            return i
+
 
     for i in s:
        print(i)
