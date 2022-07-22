@@ -3,15 +3,15 @@ def main():
     userinput = str(input(text))
     timesplit = userinput.split(" ")
     time = timesplit[0]
-    jopka = timesplit[1]
+    is_am_time = timesplit[1] == "a.m."
     result = convert(time)
-    if result >= 7.0 and result <= 8.0 and jopka == "a.m.":
+    if result >= 7.0 and result <= 8.0 and is_am_time:
         print("breakfast time")
-    elif result >= 12.0 and result <= 12.99 and jopka == "a.m.":
+    elif result >= 12.0 and result <= 12.99 and is_am_time:
         print("lunch time")
     elif result == 1 and jopka == "p.m.":
         print("lunch time")
-    elif result >= 6.0 and result <= 7.0 and jopka == "p.m.":
+    elif result >= 6.0 and result <= 7.0 and !is_am_time:
         print("dinner time")
     else:
         print()
