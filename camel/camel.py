@@ -3,16 +3,17 @@ def main():
     user_input = str(input(text))
     s = user_input.split()
 #    print(s)
-    convert(s)
+    convert(user_input)
 
 
-def convert(s):
-    for i in s:
-        if i.isupper:
-            i = "_" + i.lower()
-            return i
-        else:
-            return i
+def convert(user_input):
+    s = user_input.split()
+        for i in s:
+            if i.isupper:
+                i = "_" + i.lower()
+                return i
+            else:
+                return i
     print(i)
 
 
