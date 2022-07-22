@@ -1,9 +1,15 @@
 def main():
-    user_input = str(input("CamelCase: "))
+    text = "CamelCase: "
+    user_input = str(input(text))
     s = user_input.split()
-    print(s)
-#    for i in s:
-#       print(i)
+#    print(s)
+    convert(s)
+
+
+def convert(s)
+    for 
+    for i in s:
+       print(i)
 
 
 main()
