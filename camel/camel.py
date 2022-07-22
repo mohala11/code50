@@ -4,9 +4,6 @@ def main():
     s = user_input.split()
 #    print(s)
     convert(s)
-    outcome = " "
-    for i in s:
-        outcome += 
 
 
 def convert(s):
