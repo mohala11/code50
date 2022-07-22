@@ -6,8 +6,11 @@ def main():
     convert(s)
 
 
-def convert(s)
-    for 
+def convert(s):
+    for i in s:
+        if i.isupper:
+            i = 
+
     for i in s:
        print(i)
 
