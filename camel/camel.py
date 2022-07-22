@@ -9,9 +9,9 @@ def main():
 def convert(s):
     for i in s:
         if i.isupper:
-            i = lower(i)
+            i = i.lower()
             return i
-        elif:
+        else:
             return i
 
 
