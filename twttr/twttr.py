@@ -12,6 +12,7 @@ def convert(user_input):
         if i in list_of_vowels:
             outcome = outcome
         elif i not in list_of_vowels:
+            
             outcome += i
     print(outcome)
 
