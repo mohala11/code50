@@ -6,7 +6,7 @@ def main():
         if s in coinbase:
             price = price - s
         else:
-            print('input valid coin')
+            break
     print('Change Owed:', abs(price))
 
 
