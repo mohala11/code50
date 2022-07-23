@@ -9,8 +9,4 @@ def main():
             break
     print('Change Owed:' + str(price))
 
-    
-
-
-
 main()
