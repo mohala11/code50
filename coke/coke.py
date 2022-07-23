@@ -4,7 +4,7 @@ def main():
     s = int(input('Amount Due: ' + price + '\nInsert Coin: '))
     while s in coinbase and price >= 0:
         price += s;
-        print('Amount Due: ' + price + '\nInsert Coin: ')
+    print('Amount Due: ' + price + '\nInsert Coin: ')
 
 
 main()
