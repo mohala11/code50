@@ -7,6 +7,9 @@ def main():
             price = price - s
         else:
             break
+    print('Change Owed:' + str(price))
+
+    
 
 
 
