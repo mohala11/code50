@@ -13,7 +13,7 @@ def convert(user_input):
             outcome = outcome
         elif i not in list_of_vowels:
             outcome += i
-    print(outcome, end='')
+    print(outcome)
 
 
 main()
