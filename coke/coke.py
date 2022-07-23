@@ -3,12 +3,12 @@ def main():
     coinbase = [5, 10, 25]
     while price > 0:
         s = int(input('Amount Due: ' + str(price) + '\nInsert Coin: '))\
-        if price >=0:
+        if price >= 0:
             if s in coinbase:
                 price = price - s
             else:
                 break
-        
+
 
 
 main()
