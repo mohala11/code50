@@ -6,7 +6,7 @@ def main():
 
 def convert(user_input):
     s = list(user_input)
-    outcome = 'Output: '
+    outcome = ''
     list_of_vowels = ['E', 'Y', 'U', 'I', 'O', 'A', 'e', 'y', 'u', 'i', 'o', 'a']
     for i in s:
         if i in list_of_vowels:
