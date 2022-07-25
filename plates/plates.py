@@ -13,8 +13,6 @@ def is_valid(plate):
     for i in s and i not in marks and len(s) <= 6:
         if i[0] and i[1] in numbers:
             break
-        elif i[]
-
 
 
 main()
