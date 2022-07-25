@@ -19,11 +19,11 @@ def is_valid(s):
     i = 0
     while i < len(s):
         if s[i].isalpha() == False:
-            if s[i] == 0:
+            if s[i] == "0":
                 return False
         else:
             break
-    i += 1
+        i += 1
     for c in s:
         if c in marks:
             return False
