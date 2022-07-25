@@ -7,9 +7,15 @@ def main():
 
 
 def is_valid(s):
-    marks = [",", " ", ".", "/", "*", "_", "-", ";", ":"]
-    numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    
+    if len(s) < 2 or len(s) > 6:
+        return False
+    if s[0].isalpha == False or s[1].isalpha == False
+        return False
+    i = 0
+    while i < len(s):
+        if s[i].
+
+
 
 
 main()
