@@ -2,7 +2,7 @@ def main():
     plate = input("Plate: ")
     x = len(plate)
     marks = [",", " ", ".", "/", "*", "_", "-", ";", ":"]
-    if 2 <= x <= 6 and plate[0:6] not in marks:
+    if 2 <= x <= 6 and list(plate) not in marks:
         is_valid(plate, x)
     else:
         print("Invalid")
@@ -16,32 +16,34 @@ def is_valid(plate, x):
         else:
             print("Invalid")
     if x == 3:
-        if plate[0:2] not in numbers and plate[2] in numbers[1:9] or plate[0:3] not in numbers:
+        if plate[0:2] not in numbers and plate[2] in numbers[1:10] or plate[0:3] not in numbers:
             print("Valid")
         else:
             print("Invalid")
     if x == 4:
-        if plate[0:2] not in numbers and plate[2] in numbers[1:9] and plate[3] in numbers:
+        if plate[0:2] not in numbers and plate[2] in numbers[1:10] and plate[3] in numbers:
             print("Valid")
-        elif plate[0:3] not in numbers and plate[3] in numbers[1:9] or plate[0:4] not in numbers:
+        elif plate[0:3] not in numbers and plate[3] in numbers[1:10] or plate[0:4] not in numbers:
             print("Valid")
         else:
             print("Invalid")
     if x == 5:
-        if plate[0:2] not in numbers and plate[2] in numbers[1:9] and plate[3, 4] in numbers:
+        if plate[0:2] not in numbers and plate[2] in numbers[1:10] and plate[3, 4] in numbers:
             print("Valid")
-        elif plate[0:3] not in numbers and plate[3] in numbers[1:9] and plate[4] in numbers:
+        elif plate[0:3] not in numbers and plate[3] in numbers[1:10] and plate[4] in numbers:
             print("Valid")
-        elif plate[0:4] not in numbers and plate[4] in numbers[1:9] or plate[0:5] not in numbers:
+        elif plate[0:4] not in numbers and plate[4] in numbers[1:10] or plate[0:5] not in numbers:
             print("Valid")
         else:
             print("Invalid")
     if x == 6:
-        if plate[0:2] not in numbers and plate[2] in numbers[1:9] and plate[3, 4, 5] in numbers:
+        if plate[0:2] not in numbers and plate[2] in numbers[1:10] and plate[3, 4, 5] in numbers:
             print("Valid")
-        elif plate[0:3] not in numbers and plate[3] in numbers[1:9] and plate[4, 5] in numbers:
+        elif plate[0:3] not in numbers and plate[3] in numbers[1:10] and plate[4, 5] in numbers:
             print("Valid")
-        elif plate[0:4] not in numbers and plate[4] in numbers[1:9] and plate[5] in numbers or plate[0:6] not in numbers:
+        elif plate[0:4] not in numbers and plate[4] in numbers[1:10] and plate[5] in numbers:
+            print("Valid")
+        elif plate[0:5] not in numbers and plate[5] in numbers[1:10] or plate[0:6] not in numbers:
             print("Valid")
         else:
             print("Invalid")
