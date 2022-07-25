@@ -18,8 +18,8 @@ def is_valid(s):
                 return False
     i = 0
     while i < len(s):
-        if s[i].isalpha == False:
-            if s[i] == 0:
+        if s[i].isalpha() == False:
+            if s[i] == '0':
                 return False
         else:
             break
