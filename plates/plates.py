@@ -7,27 +7,19 @@ def main():
 
 
 def is_valid(s):
-    marks = [",", " ", ".", "/", "*", "_", "-", ";", ":"]
-    if len(s) < 2 or len(s) > 6:
+    if s.isalnum() == False or len(s) < 2 or len(s) > 6:
         return False
-    if s[0].isalpha == False or s[1].isalpha == False:
-        return False
-    for i in range(len(s)):
-        if s[i].isdigit():
-            if not s[i:].isdigit():
-                return False
-    i = 0
-    while i in range(len(s)):
-        if s[i].isdigit():
-            if s[i] == 0:
-                return False
-        else:
-            break
-        i += 1
-    for c in s:
-        if c in marks:
+    for i in range(2):
+        if s[i].isalpha() == False:
             return False
-    return True
+    temp = ""
+    for i in range(0, len(s)):
+        if s[i].isalpha() == False:
+            temp += s[i]
+            if temp[0] == "0":
+                return False
+    if s.isalpha():
+        return True
 
 
 
