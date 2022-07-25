@@ -12,7 +12,10 @@ def is_valid(s):
     for i in s and list(s) not in marks:
         if i[1] and i[2] in numbers:
             break
-        if 
+        elif i[3:].isdigit() and i[3] == 0:
+            break
+        else:
+            return s
 
 
 main()
