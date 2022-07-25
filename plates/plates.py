@@ -20,6 +20,18 @@ def is_valid(s):
                 return False
     if s.isalpha():
         return True
+    for i in range(0, len(s)):
+        if s[i].isalpha() == False:
+            recorder = i
+            break
+    valid = True
+    for i in range(recorder, len(s)):
+        if s[i].isalpha():
+            valid = False
+
+    if valid == False:
+        return False
+    return True
 
 
 
