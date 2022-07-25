@@ -9,9 +9,8 @@ def main():
 def is_valid(s):
     marks = [",", " ", ".", "/", "*", "_", "-", ";", ":"]
     numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    for i in s and i not in marks and len(s) <= 6:
-        if i[0] and i[1] in numbers:
+    while len(s) <=6 and s not in marks:
+        if s[0] and s[1] in numbers:
             break
-
 
 main()
