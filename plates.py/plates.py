@@ -9,7 +9,12 @@ def main():
 
 def is_valid(plate):
     if len(x) == "4":
-        
+        if type(plate[0;2]) == "str" and type(plate[3;4]) == "int":
+            print("Valid")
+        else:
+            print("Invalid")
+    elif len
+
 
 
 
