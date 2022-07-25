@@ -18,8 +18,8 @@ def is_valid(s):
             return False
         else:
             break
+    i += 1
     
-
 
 
 
