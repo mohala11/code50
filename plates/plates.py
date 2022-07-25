@@ -12,20 +12,20 @@ def is_valid(s):
     for i in range(2):
         if s[i].isalpha() == False:
             return False
-    temp = ""
+    c = ""
     for i in range(0, len(s)):
         if s[i].isalpha() == False:
-            temp += s[i]
-            if temp[0] == "0":
+            c += s[i]
+            if c[0] == "0":
                 return False
     if s.isalpha():
         return True
     for i in range(0, len(s)):
         if s[i].isalpha() == False:
-            recorder = i
+            x = i
             break
     valid = True
-    for i in range(recorder, len(s)):
+    for i in range(x, len(s)):
         if s[i].isalpha():
             valid = False
 
