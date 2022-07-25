@@ -12,7 +12,7 @@ def is_valid(s):
     while len(s) <=6 and s not in marks:
         if s[0] and s[1] in numbers:
             break
-        elif s[2] or s[3] or [s4]
+        
         else:
             return s
 
