@@ -17,9 +17,9 @@ def is_valid(s):
             if not s[i:].isdigit():
                 return False
     i = 0
-    while i < len(s):
-        if s[i].isalpha() == False:
-            if s[i] == "0":
+    while i in range(len(s)):
+        if s[i].isdigit():
+            if s[i] == 0:
                 return False
         else:
             break
