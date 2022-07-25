@@ -3,8 +3,14 @@ def main():
     x = len(plate)
     if x <= 1 or x > 6:
         print("Invalid")
-    if x >= 2 and x <= 6:
-        
+    else:
+        is_valid()
+
+
+def is_valid(s):
+    if len(x) == "4"
+        s = list(plate)
+            if s[0;1]
 
 
 #    if is_valid(plate):
