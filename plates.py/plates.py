@@ -7,10 +7,10 @@ def main():
         is_valid()
 
 
-def is_valid(s):
-    if len(x) == "4"
-        s = list(plate)
-            if s0;1
+def is_valid(plate):
+    if len(x) == "4":
+        
+
 
 
 #    if is_valid(plate):
