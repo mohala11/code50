@@ -1,25 +1,24 @@
 def main():
     plate = input("Plate: ")
     x = len(plate)
-    print(x)
     if x == 4 or x == 6:
         is_valid(plate, x)
     else:
-        print("loh")
+        print("Invalid")
 
 
 def is_valid(plate, x):
+    s = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     if x == 4:
-        if type(plate[0:2]) == "class 'str'" and type(plate[3:4]) == "class 'int'":
+        if plate[0:2] not in s and plate[2] in s[1:9] and plate[3] in s:
             print("Valid")
         else:
             print("Invalid")
-    elif x == 6:
-        if type(plate[0:3]) == "class 'int'" and type(plate[4:6]) == "class 'int'":
+    else:
+        if plate[0:3] not in s and plate[3] in s[1:9] and plate[4:6] in s:
             print("Valid")
         else:
             print("Invalid")
-
 
 
 main()
