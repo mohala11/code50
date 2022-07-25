@@ -10,7 +10,7 @@ def main():
 def is_valid(s):
     if len(x) == "4"
         s = list(plate)
-            if s[0;1]
+            if s0;1
 
 
 #    if is_valid(plate):
