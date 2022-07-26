@@ -23,4 +23,4 @@ d = {
 x = "Item: "
 k = str.lower(input(x))
 for k in d:
-    
+    print(d[k])
