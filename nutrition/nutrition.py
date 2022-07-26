@@ -26,7 +26,7 @@ def main():
     search(d, k)
 
 def search(d, k):
-    for i in d:
+    for _ in d:
         print("Calories:",d[k])
         break
 
