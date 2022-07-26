@@ -22,5 +22,7 @@ d = {
 }
 x = "Item: "
 k = str.lower(input(x))
-for k in d:
+for i in d:
     print(d[k])
+    break
+
