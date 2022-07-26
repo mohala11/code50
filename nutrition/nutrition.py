@@ -7,7 +7,7 @@ def main():
         "grapefruit": "60",
         "grapes": "90",
         "honeydew melon": "50",
-        "kiwifuit": "90",
+        "kiwifruit": "90",
         "lemon": "15",
         "lime": "20",
         "nectarine": "60",
@@ -27,9 +27,12 @@ def main():
 
 def search(d, k):
     for _ in d:
-        print("Calories:",d[k])
-        break
-    
+        if k in d:
+            print("Calories:",d[k])
+            break
+        else:
+            print()
+            break
 
 
 main()
