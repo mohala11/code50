@@ -26,13 +26,13 @@ def main():
     search(d, k)
 
 def search(d, k):
-    for _ in d:
+    i = 0
+    while i < 1:
         if k in d:
             print("Calories:",d[k])
-            break
+            i += i
         else:
             print()
-            break
 
 
 main()
