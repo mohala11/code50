@@ -23,6 +23,6 @@ d = {
 x = "Item: "
 k = str.lower(input(x))
 for i in d:
-    print(d[k])
+    print("Calories:",d[k])
     break
 
