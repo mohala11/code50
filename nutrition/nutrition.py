@@ -30,3 +30,5 @@ def search(d, k):
         print("Calories:",d[k])
         break
 
+
+main()
