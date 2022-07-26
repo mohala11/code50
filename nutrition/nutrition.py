@@ -30,9 +30,9 @@ def search(d, k):
     while i < 1:
         if k in d:
             print("Calories:",d[k])
-            i += i
         else:
             print()
+    i += 1
 
 
 main()
