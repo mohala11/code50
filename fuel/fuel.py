@@ -13,7 +13,7 @@ def count(fraction):
         except ValueError:
             pass
         except ZeroDivisionError:
-            pass
+            print("ya tvoy rot ebal")
 
 
 main()
