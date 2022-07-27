@@ -5,7 +5,7 @@ def main():
     elif x <= 1:
         print("E")
     else:
-        print(f"{x} %")
+        print(f"{x}%")
 
 
 def count(promt):
