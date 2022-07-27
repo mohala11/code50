@@ -1,18 +1,25 @@
 def main():
     x = count("Fraction: ")
-    print(f"{x} %")
+    if x >= 99:
+        print("F")
+    elif x <= 1:
+        print("E")
+    else:
+        print(f"{x} %")
 
 
 def count(promt):
     while True:
         try:
-            x = int(promt[0])
-            y = int(promt[2])
+            fraction = input(promt).split("/")
+            x = fraction[0]
+            y = fraction[1]
             if x > y:
                 raise ValueError
             elif y == 0:
                 raise ZeroDivisionError
-            return float(x / y * 100)
+            else:
+                return int(x) / int(y) * 100
         except ValueError:
             pass
         except ZeroDivisionError:
