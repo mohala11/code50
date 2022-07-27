@@ -1,19 +1,22 @@
 def main():
-    fraction = input("Fraction: ")
-    x = count(fraction)
+    x = count("Fraction: ")
     print(f"{x} %")
 
 
-def count(fraction):
+def count(promt):
     while True:
         try:
-            x = int(fraction[0])
-            y = int(fraction[2])
-            return int(x / y *100)
+            x = int(promt[0])
+            y = int(promt[2])
+            if x > y:
+                raise ValueError
+            elif y == 0:
+                raise ZeroDivisionError
+            return float(x / y * 100)
         except ValueError:
             pass
         except ZeroDivisionError:
-            print("ya tvoy rot ebal")
+            pass
 
 
 main()
