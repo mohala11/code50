@@ -4,8 +4,8 @@ while True:
         x = int(fraction[0])
         y = int(fraction[2])
         percent = x / y * 100
-    e
+    except ValueError:
         if x > y:
-            raise ValueError
+            break
     finally:
         print(f"{percent}%")
