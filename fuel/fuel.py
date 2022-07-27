@@ -12,14 +12,14 @@ def count(promt):
     while True:
         try:
             fraction = input(promt).split("/")
-            x = fraction[0]
-            y = fraction[1]
+            x = int(fraction[0])
+            y = int(fraction[1])
             if x > y:
                 raise ValueError
             elif y == 0:
                 raise ZeroDivisionError
             else:
-                return int(int(x) / int(y) * 100)
+                return int(x / y * 100)
         except ValueError:
             pass
         except ZeroDivisionError:
