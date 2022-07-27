@@ -19,7 +19,7 @@ def count(promt):
             elif y == 0:
                 raise ZeroDivisionError
             else:
-                return int(x) / int(y) * 100
+                return int(int(x) / int(y) * 100)
         except ValueError:
             pass
         except ZeroDivisionError:
