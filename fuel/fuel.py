@@ -4,14 +4,16 @@ while True:
         x = int(fraction[0])
         y = int(fraction[2])
         if x > y:
-            raise ValueError:
-            
+            except 
+        elif y == 0:
+            raise ZeroDivisionError
+
         percent = int(x / y * 100)
         break
     except ValueError:
         if x > y:
             pass
-    except ZeroDivisionError:
+    except :
         pass
 
 print(f"{percent}%")
