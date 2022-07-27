@@ -11,9 +11,11 @@ def count(fraction):
         try:
             i = x / y *100
             if x > y:
-                raise ValueError("zaebaL")
+                raise ValueError
         except ValueError:
             pass
-            percent = x / y * 100
+        return i
 
-    print(f"{percent}%")
+
+
+main()
