@@ -8,6 +8,7 @@ while True:
                 pass
         elif y == 0:
             raise ZeroDivisionError
+    finally:
         percent = int(x / y * 100)
 
 
