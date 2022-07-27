@@ -9,12 +9,9 @@ def count(fraction):
         x = int(fraction[0])
         y = int(fraction[2])
         try:
-            i = x / y *100
-            if x > y:
-                raise ValueError
-        except ValueError:
+            return x / y *100
+        except :
             pass
-        return i
 
 
 
