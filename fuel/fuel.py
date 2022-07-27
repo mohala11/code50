@@ -3,14 +3,9 @@ while True:
         fraction = input("Fraction: ")
         x = int(fraction[0])
         y = int(fraction[2])
+        percent = x / y * 100
+    e
         if x > y:
-            except ValueError:
-                pass
-        elif y == 0:
-            raise ZeroDivisionError
+            raise ValueError
     finally:
-        percent = int(x / y * 100)
-
-
-
-print(f"{percent}%")
+        print(f"{percent}%")
