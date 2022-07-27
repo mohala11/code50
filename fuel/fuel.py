@@ -6,9 +6,9 @@ def main():
 
 def count(fraction):
     while True:
-        x = int(fraction[0])
-        y = int(fraction[2])
         try:
+            x = int(fraction[0])
+            y = int(fraction[2])
             return int(x / y *100)
         except ValueError:
             pass
