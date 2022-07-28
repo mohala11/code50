@@ -14,7 +14,7 @@ try:
     while True:
         item = str.title(input("Item: "))
         c = ""
-        for i in item:
+        for i in d:
             c += d.get(item[i])
 except KeyError:
     pass
