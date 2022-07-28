@@ -12,8 +12,9 @@ d = {
 
 try:
     while True:
-        key = str(input(Item: ))
+        item = str.title(input(Item: ))
         i = "Total: $"
-        for 
+        for _ in item:
+            
 
 
