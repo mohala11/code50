@@ -15,7 +15,7 @@ try:
         key = str.title(input("Item: "))
         c = 0
         for key in d:
-            c += d.get(key)
+            c += d[key]
             print(c)
 except KeyError:
     pass
