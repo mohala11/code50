@@ -18,7 +18,8 @@ try:
             i += d.get(key[])
 except KeyError:
     pass
-except 
+except EOFError:
+    print("")
 
 
 
