@@ -9,13 +9,13 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-
+c = 0
 try:
     while True:
         key = str.title(input("Item: "))
         if key in d:
-            c = 0
             c += d[key]
+            print (c)
         elif key not in d:
             raise KeyError
 except KeyError:
