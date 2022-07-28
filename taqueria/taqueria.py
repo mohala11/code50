@@ -19,7 +19,7 @@ try:
         elif key not in d:
             raise KeyError
 except KeyError:
-    pass
+    continue
 except EOFError:
     print("")
 
