@@ -14,9 +14,11 @@ try:
     while True:
         key = str.title(input("Item: "))
         c = 0
-        for key in d:
+        if key in d:
             c += d[key]
-            print(c)
+            return c
+        else:
+            raise KeyError
 except KeyError:
     pass
 except EOFError:
