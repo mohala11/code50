@@ -13,8 +13,12 @@ d = {
 try:
     while True:
         item = str.title(input(Item: ))
-        i = "Total: $"
+        i = ""
         for _ in item:
-            
+            i += d.get(key[])
+except KeyError:
+    pass
+except 
+
 
 
