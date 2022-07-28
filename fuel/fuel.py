@@ -13,8 +13,7 @@ def count(promt):
         try:
             fraction = input(promt).split("/")
             x = int(fraction[0])
-            y = int(fraction[1])yes
-            
+            y = int(fraction[1])
             if x > y:
                 raise ValueError
             elif y == 0:
