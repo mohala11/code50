@@ -16,7 +16,6 @@ try:
         c = 0
         if key in d:
             c += d[key]
-            print(c)
         else:
             raise KeyError
 except KeyError:
