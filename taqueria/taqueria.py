@@ -15,7 +15,7 @@ while True:
         key = str.title(input("Item: "))
         if key in d:
             c += d[key]
-            print (f"Total: ${round(c, 2)}")
+            print (f"Total: ${c:.2f}")
         elif key not in d:
             raise KeyError
     except KeyError:
