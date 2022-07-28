@@ -15,7 +15,7 @@ while True:
         key = str.title(input("Item: "))
         if key in d:
             c += d[key]
-            print (f"Total: ${c}")
+            print (f"Total: ${float(c)}\n")
         elif key not in d:
             raise KeyError
     except KeyError:
