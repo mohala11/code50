@@ -16,10 +16,9 @@ try:
         c = 0
         for key in d:
             c += d.get(key)
+            return 
 except KeyError:
     pass
 except EOFError:
     print("")
-
-
 
