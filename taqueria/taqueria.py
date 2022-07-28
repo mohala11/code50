@@ -9,14 +9,12 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-c = float(0)
+c = 0
 while True:
     try:
         key = str.title(input("Item: "))
         if key in d:
-            x = float(d[key])
-            print(x)
-            c += x
+            c += d[key]
             print (f"Total: ${round(c, 2)}")
         elif key not in d:
             raise KeyError
