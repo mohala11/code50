@@ -1,5 +1,4 @@
-def main ():
-    d = {
+d = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -10,5 +9,7 @@ def main ():
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-    total = count(d):
-    print
+
+try:
+    while True:
+        
