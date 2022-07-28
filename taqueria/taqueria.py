@@ -12,10 +12,10 @@ d = {
 
 try:
     while True:
-        item = str.title(input(Item: ))
+        item = str.title(input("Item: "))
         i = ""
         for _ in item:
-            i += d.get(key[])
+            i += d.get(item[_])
 except KeyError:
     pass
 except EOFError:
