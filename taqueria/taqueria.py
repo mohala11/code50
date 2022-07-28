@@ -9,12 +9,14 @@ d = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-c = 0
+c = float(0)
 while True:
     try:
         key = str.title(input("Item: "))
         if key in d:
-            c += float(d[key])
+            x = float(d[key])
+            print(x)
+            c += x
             print ("Total: $",float(c))
         elif key not in d:
             raise KeyError
