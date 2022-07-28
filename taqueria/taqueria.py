@@ -10,17 +10,18 @@ d = {
     "Tortilla Salad": 8.00
 }
 c = 0
-try:
-    while True:
+while True:
+    try:
         key = str.title(input("Item: "))
         if key in d:
             c += d[key]
             print (c)
         elif key not in d:
             raise KeyError
-except KeyError:
-    continue
-except EOFError:
-    print("")
+    except KeyError:
+        continue
+    except EOFError:
+        print("")
+        break
 
 
