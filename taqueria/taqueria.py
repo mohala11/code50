@@ -15,7 +15,7 @@ try:
         key = str.title(input("Item: "))
         c = ""
         for key in d:
-            c += d.get(key[])
+            c += d.get(key)
 except KeyError:
     pass
 except EOFError:
