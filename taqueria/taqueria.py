@@ -13,7 +13,7 @@ d = {
 try:
     while True:
         key = str.title(input("Item: "))
-        c = ""
+        c = 0
         for key in d:
             c += d.get(key)
 except KeyError:
