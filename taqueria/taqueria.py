@@ -13,10 +13,9 @@ d = {
 try:
     while True:
         key = str.title(input("Item: "))
-        c = 0
         if key in d:
+            c = 0
             c += d[key]
-            print(c)
         elif key not in d:
             raise KeyError
 except KeyError:
