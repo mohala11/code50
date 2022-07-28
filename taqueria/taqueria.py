@@ -12,4 +12,8 @@ d = {
 
 try:
     while True:
-        
+        key = str(input(Item: ))
+        i = "Total: $"
+        for 
+
+
