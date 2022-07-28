@@ -13,9 +13,9 @@ d = {
 try:
     while True:
         item = str.title(input("Item: "))
-        i = ""
-        for _ in item:
-            i += d.get(item[_])
+        c = ""
+        for i in item:
+            c += d.get(item[i])
 except KeyError:
     pass
 except EOFError:
