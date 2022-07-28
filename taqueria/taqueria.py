@@ -17,7 +17,7 @@ while True:
             x = float(d[key])
             print(x)
             c += x
-            print ("Total: $",float(c))
+            print (f"Total: ${round(c, 2)}")
         elif key not in d:
             raise KeyError
     except KeyError:
