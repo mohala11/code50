@@ -8,6 +8,4 @@ while True:
         elif item in grocery_list:
             grocery_list[item] += 1
     except EOFError:
-        break
-print(grocery_list)
-
+        print(grocery_list)
