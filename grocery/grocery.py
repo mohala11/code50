@@ -9,5 +9,5 @@ while True:
             grocery_list[item] += 1
     except EOFError:
         d = sorted(grocery_list.items())
-        print(*d, sep="/n")
+        print(*d, sep="\n")
         break
