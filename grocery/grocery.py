@@ -8,5 +8,5 @@ while True:
         elif item in grocery_list:
             grocery_list[item] +=1
     except EOFError:
+        print(grocery_list)
         break
-print(grocery_list)
