@@ -14,7 +14,7 @@ d = [
 ]
 while True:
     try:
-        date = str(input("Date: "))
+        date = str.strip((input("Date: ")))
         # сторим переменную для определения формата даты
         x = date[-5]
         # если дата формата MM/DD/YYYY
