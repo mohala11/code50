@@ -1,3 +1,17 @@
+d = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
 date = str(input("Date: "))
 x = date[-5]
 if date[-5] == "/":
@@ -12,4 +26,6 @@ if date[-5] == "/":
     else:
         print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
 elif date[-5] == " ":
-    
+    date = date.replace(",","")
+    if 
+
