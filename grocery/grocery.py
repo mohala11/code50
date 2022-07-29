@@ -21,4 +21,3 @@ while True:
         for i in new_list:
             print(i[1], i[0])
         break
-
