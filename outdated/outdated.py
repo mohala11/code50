@@ -12,11 +12,11 @@ d = [
     "November",
     "December"
 ]
-date = str(input("Date: "))
-# сторим переменную для определения формата даты
-x = date[-5]
 while True:
     try:
+        date = str(input("Date: "))
+        # сторим переменную для определения формата даты
+        x = date[-5]
         # если дата формата MM/DD/YYYY
         if date[-5] == "/":
             date = date.split("/")
@@ -31,7 +31,7 @@ while True:
                 print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
-            date = date.replace(",","")
+            date = date.replace(",", "")
             date = date.split(" ")
             date[1] = int(date[1])
             month = d.index(date[0])+1
