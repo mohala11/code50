@@ -8,6 +8,5 @@ while True:
         elif item in grocery_list:
             grocery_list[item] += 1
     except EOFError:
-        d = sorted(grocery_list.items())
-        print(*d, sep="\n")
+        print(item, value, {k: v for k, v in sorted(grocery_list.items(), key=lambda item: item[1])})
         break
