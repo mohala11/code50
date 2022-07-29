@@ -34,7 +34,6 @@ while True:
         elif date[-5] == " ":
             date = date.replace(",", "")
             date = date.split(" ")
-            print(date)
             date[1] = int(date[1])
             month = d.index(date[0])+1
             if date[0] not in d:
