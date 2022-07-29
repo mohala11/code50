@@ -39,7 +39,7 @@ while True:
                 raise ValueError
             elif date[1] > 31:
                 raise ValueError
-            elif elif len(date[2]) > 4:
+            elif len(date[2]) > 4:
                 raise ValueError
             else:
                 print(f"{date[2]}-{month:02}-{date[1]:02}")
