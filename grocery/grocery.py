@@ -6,7 +6,8 @@ while True:
             i = 1
             grocery_list[item] = i
         elif item in grocery_list:
-            grocery_list[item] +=1
+            grocery_list[item] += 1
     except EOFError:
-        print(grocery_list)
         break
+print(grocery_list)
+
