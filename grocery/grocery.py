@@ -1,4 +1,3 @@
-# заводим словарь
 grocery_list = {}
 # цикл наполнения
 while True:
@@ -18,9 +17,8 @@ while True:
     # если юзер прерывает цикл
     except EOFError:
         # сортируем словарь по айтемам
-        {k: v for k, v in sorted(grocery_list.items(), key=lambda item: item[1])}
-        print(grocery_list)
-        # выводим словарь на экран в виде КОЛИЧЕСТВО АЙТЕМ
-        #for key, value in grocery_list.items():
-            #print(value, key, sep = " ")
+        new_list = sorted(grocery_list.items(), key=lambda x: x[1], reverse=True)
+        for i in new_list:
+            print(i[1], i[o])
         break
+
