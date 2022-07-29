@@ -20,6 +20,6 @@ while True:
         # сортируем словарь по айтемам
         {k: v for k, v in sorted(grocery_list.items(), key=lambda item: item[1])}
         # выводим словарь на экран в виде КОЛИЧЕСТВО АЙТЕМ
-        for value, key in grocery_list.items():
+        for key, value in grocery_list.items():
             print(value, key, sep = " ")
         break
