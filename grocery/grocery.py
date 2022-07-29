@@ -17,7 +17,7 @@ while True:
     # если юзер прерывает цикл
     except EOFError:
         # сортируем словарь по айтемам
-        new_list = sorted(grocery_list.items(), key=lambda x: x[0], reverse=True)
+        new_list = sorted(grocery_list.items(), key=lambda x: x[0], reverse=False)
         for i in new_list:
             print(i[1], i[0])
         break
