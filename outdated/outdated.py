@@ -29,6 +29,7 @@ while True:
                 raise ValueError
             else:
                 print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
+                break
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
             date = date.replace(",", "")
@@ -44,6 +45,7 @@ while True:
                 raise ValueError
             else:
                 print(f"{date[2]}-{month:02}-{date[1]:02}")
+                break
         else:
             raise ValueError
     except ValueError:
