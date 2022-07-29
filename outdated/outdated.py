@@ -14,21 +14,25 @@ d = [
 ]
 date = str(input("Date: "))
 x = date[-5]
-if date[-5] == "/":
-    date = date.split("/")
-    date[0], date[1] = int(date[0]), int(date[1])
-    if date[0] > 12:
-        print("dolbaeb1")
-    elif date[1] > 31:
-        print("dolbaeb2")
-    elif len(date[2]) > 4:
-        print("dolbaeb3")
-    else:
-        print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
-elif date[-5] == " ":
-    date = date.replace(",","")
-    date = date.split(" ")
-    if date[0] in d:
-        print(f"{date[2]}-{d.index(date[0])}-{date[1]:02}")
-    else:
-        print("huy sosi")
+while True:
+    try:
+        if date[-5] == "/":
+            date = date.split("/")
+            date[0], date[1] = int(date[0]), int(date[1])
+            if date[0] > 12:
+                print("dolbaeb1")
+            elif date[1] > 31:
+                print("dolbaeb2")
+            elif len(date[2]) > 4:
+                print("dolbaeb3")
+            else:
+                print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
+        elif date[-5] == " ":
+            date = date.replace(",","")
+            date = date.split(" ")
+            date[1] = int(date[1])
+            month = d.index(date[0])+1
+            if date[0] in d:
+                print(f"{date[2]}-{month:02}-{date[1]:02}")
+            else:
+                print("huy sosi")
