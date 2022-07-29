@@ -29,3 +29,4 @@ elif date[-5] == " ":
     date = date.replace(",","")
     date = date.spit(" ")
     if date[0] in d:
+        print(f"{date[2]}-{d[])
