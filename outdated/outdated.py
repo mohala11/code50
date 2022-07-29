@@ -29,4 +29,6 @@ elif date[-5] == " ":
     date = date.replace(",","")
     date = date.spit(" ")
     if date[0] in d:
-        print(f"{date[2]}-{d[])
+        print(f"{date[2]}-{d[date[0]]}-{date[1]:02}")
+    else:
+        print("huy sosi")
