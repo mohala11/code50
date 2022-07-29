@@ -18,7 +18,7 @@ while True:
     # если юзер прерывает цикл
     except EOFError:
         # сортируем словарь по айтемам
-        {k: v for k, v in sorted(grocery_list.items(), key=lambda grocery: grocery[0])}
+        {k: v for k, v in sorted(grocery_list.items(), key=lambda v: v[0])}
         # выводим словарь на экран в виде КОЛИЧЕСТВО АЙТЕМ
         for key, value in grocery_list.items():
             print(value, key, sep = " ")
