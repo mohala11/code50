@@ -27,5 +27,6 @@ if date[-5] == "/":
         print(f"{date[2]}-{date[0]:02}-{date[1]:02}")
 elif date[-5] == " ":
     date = date.replace(",","")
-    if 
+    date = date.spit(" ")
+    if date
 
