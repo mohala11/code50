@@ -29,6 +29,6 @@ elif date[-5] == " ":
     date = date.replace(",","")
     date = date.split(" ")
     if date[0] in d:
-        print(f"{date[2]}-{d[date[0]]}-{date[1]:02}")
+        print(f"{date[2]}-{d.index(date[0])}-{date[1]:02}")
     else:
         print("huy sosi")
