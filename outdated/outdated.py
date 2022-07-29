@@ -43,5 +43,7 @@ while True:
                 raise ValueError
             else:
                 print(f"{date[2]}-{month:02}-{date[1]:02}")
+        else:
+            raise ValueError
     except ValueError:
         pass
