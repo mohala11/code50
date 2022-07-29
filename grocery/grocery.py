@@ -2,3 +2,7 @@ grocery_list = {}
 while True:
     try:
         item = str.upper("")
+        if item not in grocery_list:
+            i = 1
+            grocery_list[item] = i
+        elif item in grocery_list
