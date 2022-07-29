@@ -28,5 +28,4 @@ if date[-5] == "/":
 elif date[-5] == " ":
     date = date.replace(",","")
     date = date.spit(" ")
-    if date
-
+    if date[0] in d:
