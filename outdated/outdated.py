@@ -33,7 +33,7 @@ while True:
                 break
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
-            if 
+            regex= re.compile('[@_!#$%^&*()<>?/\\\|}{~:[\]]') 
             date = date.replace(",", "")
             date = date.split(" ")
             date[1] = int(date[1])
