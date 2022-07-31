@@ -33,6 +33,7 @@ while True:
                 break
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
+            # проверяем строку на наличие запятой после даты
             coma = re.compile(',')
             if(coma.search(date) == None):
                 raise ValueError
