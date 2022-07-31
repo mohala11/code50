@@ -32,6 +32,7 @@ while True:
                 break
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
+            
             date = date.replace(",", "")
             date = date.split(" ")
             date[1] = int(date[1])
