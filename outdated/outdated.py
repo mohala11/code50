@@ -1,4 +1,4 @@
-import re
+import string
 d = [
     "January",
     "February",
@@ -34,8 +34,10 @@ while True:
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
             # проверяем строку на наличие запятой после даты
-            coma = re.compile(',')
-            if(coma.search(date) == None):
+            # coma = re.compile(',')
+            # if(coma.search(date) == None):
+                # raise ValueError
+            if string.punctuation(date) == False:
                 raise ValueError
             else:
                 date = date.replace(",", "")
