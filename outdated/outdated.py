@@ -1,4 +1,4 @@
-import string
+import re
 d = [
     "January",
     "February",
@@ -41,7 +41,6 @@ while True:
                 date = date.replace(",", "")
                 date = date.split(" ")
                 date[1] = int(date[1])
-                month = d.index(date[0])+1
                 if date[0] not in d:
                     raise ValueError
                 elif date[1] > 31:
@@ -49,6 +48,7 @@ while True:
                 elif len(date[2]) > 4:
                     raise ValueError
                 else:
+                    month = d.index(date[0])+1
                     print(f"{date[2]}-{month:02}-{date[1]:02}")
                     break
         else:
