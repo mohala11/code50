@@ -1,3 +1,4 @@
+import re
 d = [
     "January",
     "February",
@@ -32,7 +33,7 @@ while True:
                 break
         # если дата формата MONTHTITLE DD, YYYY
         elif date[-5] == " ":
-            
+            if 
             date = date.replace(",", "")
             date = date.split(" ")
             date[1] = int(date[1])
