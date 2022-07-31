@@ -36,7 +36,7 @@ while True:
             date = date.split(" ")
             # проверяем строку на наличие запятой после даты
             coma = re.compile(',')
-            if(coma.search(date) == None):
+            if(coma.search(date[1]) == None):
                 raise ValueError
             else:
                 date[1] = date[1].replace(",", "")
