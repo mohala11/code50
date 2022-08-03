@@ -25,6 +25,7 @@ def main(figlet, list):
     # определяем вид sys.argv и его корректность
     a = check(list)
     if a == 1:
+        
         rng(list, figlet)
     elif a == 2:
         specificfont(figlet)
