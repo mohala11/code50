@@ -40,17 +40,18 @@ def check(list):
     else:
         return 3
 
-
+def userdata():
+    return str(input("Input: "))
 
 def rng(list, figlet):
-    x = str(input("Input: "))
+    x = userdata()
     font = random.choice(list)
     figlet.setFont(font=font)
     print("Output:\n" + figlet.renderText(x))
 
 
 def specificfont(figlet):
-    x = str(input("Input: "))
+    x = userdata()
     figlet.setFont(font=sys.argv[2])
     print("Output:\n" + figlet.renderText(x))
 
