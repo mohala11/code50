@@ -22,7 +22,7 @@ list = figlet.getFonts()
 
 
 def main(figlet, list):
-    # определяем вид инпута и его корректность
+    # определяем вид sys.argv и его корректность
     a = check(list)
     if a == 1:
         rng(list, figlet)
