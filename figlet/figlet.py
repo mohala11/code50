@@ -20,6 +20,7 @@ def rng(x):
 
 def specificfont(x):
     figlet = Figlet()
+    if 
     print(figlet.renderText(x))
 
 
