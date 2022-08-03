@@ -40,8 +40,10 @@ def check(list):
     else:
         return 3
 
+
 def userdata():
     return str(input("Input: "))
+
 
 def rng(list, figlet):
     x = userdata()
