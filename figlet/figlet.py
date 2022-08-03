@@ -4,10 +4,10 @@ import random
 
 def main():
     x = str(input("Input: "))
-#    if sys.argv[1] == None:
-    rng(x)
-#    else:
-#        specificfont(x)
+    if len(sys.argv) == 0:
+        rng(x)
+    else:
+        specificfont(x)
 
 
 def rng(x):
@@ -18,6 +18,9 @@ def rng(x):
     print(figlet.renderText(x))
 
 
+def specificfont(x):
+    figlet = Figlet()
+    print(figlet.renderText(x))
 
 
 main()
