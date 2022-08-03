@@ -7,11 +7,10 @@ list = figlet.getFonts()
 
 def main(figlet, list):
     a = check(list)
-    x = str(input("Input: "))
     if a == 1:
-        rng(x, list, figlet)
+        rng(list, figlet)
     elif a == 2:
-        specificfont(x, figlet)
+        specificfont(figlet)
     elif a == 3:
         sys.exit("Invalid usage")
 #    if len(sys.argv) == 1 or len(sys.argv) == 3 and sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
@@ -37,6 +36,7 @@ def check(list):
 
 
 def rng(x, list, figlet):
+    x = str(input("Input: "))
     figlet = Figlet()
     font = random.choice(list)
     figlet.setFont(font=font)
@@ -44,6 +44,7 @@ def rng(x, list, figlet):
 
 
 def specificfont(x,  figlet):
+    x = str(input("Input: "))
     figlet = Figlet()
     figlet.setFont(font=sys.argv[2])
     print("Output:\n" + figlet.renderText(x))
