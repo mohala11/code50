@@ -25,10 +25,11 @@ def main(figlet, list):
     # определяем вид sys.argv и его корректность
     a = check(list)
     if a == 1:
-        
-        rng(list, figlet)
+        font = random.choice(list)
+        convert(figlet, font)
     elif a == 2:
-        specificfont(figlet)
+        font = sys.argv[2]
+        convert(figlet, font)
     elif a == 3:
         sys.exit("Invalid usage")
 
@@ -42,21 +43,11 @@ def check(list):
         return 3
 
 
-def userdata():
-    return str(input("Input: "))
-
-
-def rng(list, figlet):
-    x = userdata()
-    font = random.choice(list)
+def convert(figlet, font):
+    x = str(input("Input: "))
     figlet.setFont(font=font)
     print("Output:\n" + figlet.renderText(x))
 
-
-def specificfont(figlet):
-    x = userdata()
-    figlet.setFont(font=sys.argv[2])
-    print("Output:\n" + figlet.renderText(x))
 
 
 if __name__ == "__main__":
