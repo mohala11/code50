@@ -3,7 +3,7 @@ from pyfiglet import Figlet
 import random
 
 def main():
-    if len(sys.argv) == 1 or len(sys.argv) == 3:
+    if len(sys.argv) == 1 or len(sys.argv) == 3 and sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
         x = str(input("Input: "))
         figlet = Figlet()
         list = figlet.getFonts()
@@ -14,7 +14,7 @@ def main():
         else:
             sys.exit("Invalid usage")
     else:
-        specificfont(x, figlet)
+        sys.exit("Invalid usage")
 
 
 def rng(x, list, figlet):
