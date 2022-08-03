@@ -2,19 +2,38 @@ import sys
 from pyfiglet import Figlet
 import random
 
-def main():
-    if len(sys.argv) == 1 or len(sys.argv) == 3 and sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
-        x = str(input("Input: "))
-        figlet = Figlet()
-        list = figlet.getFonts()
-        if len(sys.argv) == 1:
-            rng(x, list, figlet)
-        elif sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
-            specificfont(x, figlet)
-        else:
-            sys.exit("Invalid usage")
-    else:
+figlet = Figlet()
+list = figlet.getFonts()
+
+def main(figlet, list):
+    a = check(list)
+    x = str(input("Input: "))
+    if a == 1:
+        rng(x, list, figlet)
+    elif a == 2:
+        specificfont(x, figlet)
+    elif a == 3:
         sys.exit("Invalid usage")
+#    if len(sys.argv) == 1 or len(sys.argv) == 3 and sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
+#       x = str(input("Input: "))
+#        if len(sys.argv) == 1:
+#            rng(x, list, figlet)
+#        elif sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
+#            specificfont(x, figlet)
+#        else:
+#            sys.exit("Invalid usage")
+#    else:
+#        sys.exit("Invalid usage")
+
+
+def check(list):
+    if len(sys.argv) == 1:
+        return 1
+    elif len(sys.argv) == 3 and sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
+        return 2
+    else:
+        return 3
+
 
 
 def rng(x, list, figlet):
