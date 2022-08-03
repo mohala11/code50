@@ -14,7 +14,7 @@ def main():
 def random(x):
     figlet = Figlet()
     list = figlet.getFonts()
-    font = random.choice(list)
+    font = random.sample(list)
     figlet.setFont(font=font)
     print(figlet.renderText(x))
 
