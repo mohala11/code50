@@ -1,7 +1,6 @@
 import sys
 from pyfiglet import Figlet
 import random
-from random import choice
 
 def main():
     x = str(input("Input "))
