@@ -1,2 +1,4 @@
 import sys
-import 
+from pyfiglet import Figlet
+
+x = str.input()
