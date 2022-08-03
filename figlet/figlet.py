@@ -35,17 +35,15 @@ def check(list):
 
 
 
-def rng(x, list, figlet):
+def rng(list, figlet):
     x = str(input("Input: "))
-    figlet = Figlet()
     font = random.choice(list)
     figlet.setFont(font=font)
     print("Output:\n" + figlet.renderText(x))
 
 
-def specificfont(x,  figlet):
+def specificfont(figlet):
     x = str(input("Input: "))
-    figlet = Figlet()
     figlet.setFont(font=sys.argv[2])
     print("Output:\n" + figlet.renderText(x))
 
