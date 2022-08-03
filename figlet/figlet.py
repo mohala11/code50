@@ -20,4 +20,4 @@ def random(x):
 
 
 
-
+main()
