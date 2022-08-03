@@ -1,7 +1,7 @@
 import sys
 from pyfiglet import Figlet
 import random
-
+from random import choice
 
 def main():
     x = str(input("Input "))
@@ -14,7 +14,7 @@ def main():
 def random(x):
     figlet = Figlet()
     list = figlet.getFonts()
-    font = random.sample(list)
+    font = random.choice(list)
     figlet.setFont(font=font)
     print(figlet.renderText(x))
 
