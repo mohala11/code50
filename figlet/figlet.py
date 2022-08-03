@@ -50,4 +50,4 @@ def specificfont(x,  figlet):
 
 
 if __name__ == "__main__":
-    main()
+    main(figlet, list)
