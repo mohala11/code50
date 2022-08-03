@@ -1,15 +1,16 @@
 import sys
 from pyfiglet import Figlet
+import random
 
 def main():
     x = str(input("Input: "))
 #    if sys.argv[1] == None:
-    random(x)
+    rng(x)
 #    else:
 #        specificfont(x)
 
 
-def random(x):
+def rng(x):
     figlet = Figlet()
     list = figlet.getFonts()
     font = random.choice(list)
