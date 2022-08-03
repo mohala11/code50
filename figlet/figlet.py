@@ -6,8 +6,10 @@ def main():
     x = str(input("Input: "))
     if len(sys.argv) == 1:
         rng(x)
-    else:
+    if len(sys.argv) == 3:
         specificfont(x)
+    else:
+        sys.exit("Invalid usage")
 
 
 def rng(x):
@@ -20,8 +22,12 @@ def rng(x):
 
 def specificfont(x):
     figlet = Figlet()
-    if 
-    print(figlet.renderText(x))
+    list = figlet.getFonts()
+    if sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
+        figlet.setFont(font=sys.argv[2])
+        print(figlet.renderText(x))
+    else:
+        sys.exit("Invalid usage")
 
 
 main()
