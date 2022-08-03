@@ -3,13 +3,16 @@ from pyfiglet import Figlet
 import random
 
 def main():
-    x = str(input("Input: "))
-    figlet = Figlet()
-    list = figlet.getFonts()
-    if len(sys.argv) == 1:
-        rng(x, list, figlet)
-    elif sys.argv[1] != "-f" or sys.argv[1] != "--font" and sys.argv[2] not in list:
-        sys.exit("Invalid usage")
+    if len(sys.argv) == 1 or len(sys.argv) == 3:
+        x = str(input("Input: "))
+        figlet = Figlet()
+        list = figlet.getFonts()
+        if len(sys.argv) == 1:
+            rng(x, list, figlet)
+        elif sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
+            specificfont(x, figlet)
+        else:
+            sys.exit("Invalid usage")
     else:
         specificfont(x, figlet)
 
