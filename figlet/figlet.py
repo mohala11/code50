@@ -8,10 +8,10 @@ def main():
     list = figlet.getFonts()
     if len(sys.argv) == 1:
         rng(x, list, figlet)
-    elif sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
-        specificfont(x, figlet)
-    else:
+    elif sys.argv[1] != "-f" or sys.argv[1] != "--font" and sys.argv[2] not in list:
         sys.exit("Invalid usage")
+    else:
+        specificfont(x, figlet)
 
 
 def rng(x, list, figlet):
