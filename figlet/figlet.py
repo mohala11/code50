@@ -4,7 +4,7 @@ import random
 
 def main():
     x = str(input("Input: "))
-    if len(sys.argv) == 0:
+    if len(sys.argv) == 1:
         rng(x)
     else:
         specificfont(x)
