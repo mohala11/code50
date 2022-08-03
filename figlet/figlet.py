@@ -7,9 +7,9 @@ def main():
     figlet = Figlet()
     list = figlet.getFonts()
     if len(sys.argv) == 1:
-        rng()
+        rng(x, list)
     elif sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in list:
-        specificfont()
+        specificfont(x, list)
     else:
         sys.exit("Invalid usage")
 
