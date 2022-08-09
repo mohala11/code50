@@ -9,9 +9,9 @@ except ValueError:
     sys.exit("error")
 
 
-headers = requests.headers("https://api.coindesk.com/v1/bpi/currentprice.json")
+r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
-print(headers)
+print(r.headers)
 
 # response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
