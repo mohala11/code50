@@ -15,4 +15,4 @@ r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
 o = r.json()
 z = float(o["bpi"]["USD"]["rate_float"])
-print(z*y)
+print(str.format(z*y, "_"))
