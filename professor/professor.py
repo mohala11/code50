@@ -13,13 +13,11 @@
 
 import random
 
-# я в душе не ебу зачем дана такая уебанская структура кода и какую стратегическую хуйню я должен решать в мейне, но раз уж я долбаеб, то я заколю функцию в переменную и передам ее другой функции, потому что да
 def main():
     level = get_level()
     generate_integer(level)
 
 
-# ну тут мы типа спрашиваем уровень сложности, хуе-мое, очень важно, очень функционально
 def get_level():
     while True:
         try:
@@ -31,7 +29,6 @@ def get_level():
     return level
 
 
-# зато тут теперь ебанутые джунгли, джонни, ааааа, ифы на деревьях
 def generate_integer(level):
             i = 0
             score = 0
@@ -44,7 +41,6 @@ def generate_integer(level):
                     y = random.randint(10**(level-1), 10**level-1)
                 z = x + y
                 f = int(input(f"{x} + {y} = "))
-                # если долбаеб не смог сложить два числа
                 if f != z:
                     sum_error(x, y, z)
                 else:
