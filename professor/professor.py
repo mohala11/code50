@@ -46,14 +46,14 @@ def generate_integer(level):
                 f = int(input(f"{x} + {y} = "))
                 # если долбаеб не смог сложить два числа
                 if f != z:
-                    ya_debil(x, y, z)
+                    sum_error(x, y, z)
                 else:
                     score += 1
                 i += 1
             print(f"Score: {score}")
 
 
-def ya_debil(x, y, z):
+def sum_error(x, y, z):
     print("EEE")
     errorcount = 0
     while errorcount <= 1:
