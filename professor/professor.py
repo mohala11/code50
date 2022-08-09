@@ -42,10 +42,6 @@ def generate_integer(level):
                 elif level in [2, 3]:
                     x = random.randint(10**(level-1), 10**level-1)
                     y = random.randint(10**(level-1), 10**level-1)
-                lowrange = 1 ** level - 1
-                upperrange = 10 ** level
-                x = random.randrange(lowrange, upperrange)
-                y = random.randrange(lowrange, upperrange)
                 z = x + y
                 f = int(input(f"{x} + {y} = "))
                 # если долбаеб не смог сложить два числа
