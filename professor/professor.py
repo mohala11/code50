@@ -36,6 +36,12 @@ def generate_integer(level):
             i = 0
             score = 0
             while i < 10:
+                if level == 1:
+                    x = random.randint(0, 10**level-1)
+                    y = random.randint(0, 10**level-1)
+                elif level in [2, 3]:
+                    x = random.randint(10**(level-1), 10**level-1)
+                    y = random.randint(10**(level-1), 10**level-1)
                 lowrange = 1 ** level - 1
                 upperrange = 10 ** level
                 x = random.randrange(lowrange, upperrange)
