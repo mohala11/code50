@@ -2,8 +2,8 @@ import json
 import requests
 import sys
 
-if sys.argv not float:
-    sys.exit()
+x = float(sys.argv)
+if 
 
 response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
 # print(json.dumps(response.json(), indent=2))
