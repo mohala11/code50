@@ -3,7 +3,8 @@ import sys
 
 
 try:
-    x = float(sys.argv)
+    y = float(sys.argv[1])
+    print(y)
 except ValueError:
     sys.exit("dolbaeb")
 
