@@ -9,7 +9,7 @@ except ValueError:
     sys.exit("dolbaeb")
 
 
-response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
+response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 # print(json.dumps(response.json(), indent=2))
 
 o = response.json()
