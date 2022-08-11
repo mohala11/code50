@@ -3,7 +3,7 @@ from twttr import shorten
 
 def test_shorten_only_letters():
     assert shorten("my name is Vitaly") == "my nm s Vtly"
-    assert shorten("my wife's name is Nataly") == "my wf's nm s Ntly"
+    assert shorten("my wife's name is Nataly, she is beatifull") == "my wf's nm s Ntly, sh s btfll"
 
 
 def test_shorten_letters_and_numbers():
