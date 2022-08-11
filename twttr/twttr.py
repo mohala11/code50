@@ -11,7 +11,7 @@ def convert(user_input):
     for i in s:
         if i.lower() in list_of_vowels:
             outcome = outcome
-        elif i not in list_of_vowels:
+        elif i.lower() not in list_of_vowels:
             outcome += i
     print(outcome)
 
