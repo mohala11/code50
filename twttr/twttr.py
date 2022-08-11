@@ -1,7 +1,7 @@
 def main():
     text = 'Input: '
     user_input = str(input(text))
-    convert(user_input)
+    print(convert(user_input))
 
 
 def convert(user_input):
@@ -13,7 +13,7 @@ def convert(user_input):
             outcome = outcome
         elif i.lower() not in list_of_vowels:
             outcome += i
-    print(outcome)
+    return outcome
 
 
 main()
