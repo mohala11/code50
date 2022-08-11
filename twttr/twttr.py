@@ -1,10 +1,10 @@
 def main():
     text = 'Input: '
     user_input = str(input(text))
-    print(convert(user_input))
+    print(shorten(user_input))
 
 
-def convert(user_input):
+def shorten(user_input):
     s = list(user_input)
     outcome = ''
     list_of_vowels = ['e', 'u', 'i', 'o', 'a']
