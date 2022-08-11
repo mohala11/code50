@@ -1,1 +1,1 @@
-print(str(input("Print something CAPITALIZED ")).lower())
+print(str(input("Print something CAPITALIZED: ")).lower())
