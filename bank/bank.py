@@ -13,4 +13,6 @@ def value(greeting):
     else:
         return 100
 
-main()
+
+if __name__ == "__main__":
+    main()
