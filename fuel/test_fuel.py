@@ -14,4 +14,5 @@ def test_zero():
 
 def test_ok():
     assert convert("1/4") == 25 and gauge(25) == "25%"
-    assert convert()
+    assert convert("1/100") == 1 and gauge(1) == "E"
+    assert convert("99/100") == 99 and gauge(99) == "F"
