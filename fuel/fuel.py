@@ -1,14 +1,10 @@
 def main():
-    x = count("Fraction: ")
-    if x >= 99:
-        print("F")
-    elif x <= 1:
-        print("E")
-    else:
-        print(f"{x}%")
+    x = convert("Fraction: ")
+    print(gauge(x))
 
 
-def count(promt):
+
+def convert(promt):
     while True:
         try:
             fraction = input(promt).split("/")
@@ -24,6 +20,16 @@ def count(promt):
             pass
         except ZeroDivisionError:
             pass
+
+
+def gauge(x):
+    if x >= 99:
+        return "F"
+    elif x <= 1:
+        return "E"
+    else:
+        return "{x%"
+
 
 
 main()
