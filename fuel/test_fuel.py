@@ -3,5 +3,5 @@ from fuel import convert, gauge
 
 
 def test_letters():
-    with pytest.raises(TypeError):
+    with pytest.raises(ValueError):
         convert("cat/dog")

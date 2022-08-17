@@ -8,14 +8,12 @@ def convert():
     while True:
         try:
             fraction = input("Fraction: ").split("/")
-            x = int(fraction[0])
-            y = int(fraction[1])
-            if x > y:
+            if int(fraction[0]) > int(fraction[1]) and fraction.isalpha() == True:
                 raise ValueError
-            elif y == 0:
+            elif int(fraction[1]) == 0:
                 raise ZeroDivisionError
             else:
-                return round(x / y * 100)
+                return round(int(fraction[0]) / int(fraction[1]) * 100)
         except ValueError:
             pass
         except ZeroDivisionError:
