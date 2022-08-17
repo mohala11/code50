@@ -17,6 +17,8 @@ def convert(a):
                 raise ZeroDivisionError
             else:
                 return round(x / y * 100)
+        except TypeError:
+            pass
         except ValueError:
             pass
         except ZeroDivisionError:
