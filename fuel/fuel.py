@@ -1,15 +1,14 @@
 def main():
-    fraction = input("Fraction: ").split("/")
-    x = convert(fraction)
-    z = gauge(x)
-    print(z)
+    fraction = convert()
+    print(gauge(fraction))
 
 
 
-def convert(fraction):
+def convert():
     while True:
         try:
-            if int(fraction[0]) > int(fraction[1]):
+            fraction = input("Fraction: ").split("/")
+            if int(fraction[0]) > int(fraction[1]) and fraction.isalpha() == True:
                 raise ValueError
             elif int(fraction[1]) == 0:
                 raise ZeroDivisionError
