@@ -12,4 +12,6 @@ def test_zero():
         convert("1/0")
 
 
-def 
+def test_ok():
+    assert convert("1/4") == 25 and gauge(25) == "25%"
+    assert convert()
