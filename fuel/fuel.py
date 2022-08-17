@@ -8,7 +8,7 @@ def convert():
     while True:
         try:
             fraction = input("Fraction: ").split("/")
-            if int(fraction[0]) > int(fraction[1]) and fraction.isalpha() == True:
+            if int(fraction[0]) > int(fraction[1]):
                 raise ValueError
             elif int(fraction[1]) == 0:
                 raise ZeroDivisionError
