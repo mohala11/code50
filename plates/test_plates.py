@@ -17,13 +17,15 @@ def test_punctuation():
     assert is_valid("PT,03") == False
 
 
-def letter_after_number():
+def test_letter_after_number():
     assert is_valid("CS50A") == False
     assert is_valid("CSS5AS") == False
 
 
-def noletters_nonumbers():
-    assert is_valid("CSDA")
+def test_noletters_nonumbers():
+    assert is_valid("CSDA") == True
+    assert is_valid("3124") == False
+
 
 
 
