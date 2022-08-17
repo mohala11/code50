@@ -1,13 +1,13 @@
 def main():
-    fraction = convert("Fraction: ")
+    fraction = convert()
     print(gauge(fraction))
 
 
 
-def convert(promt):
+def convert():
     while True:
         try:
-            fraction = input(promt).split("/")
+            fraction = input("Fraction: ").split("/")
             x = int(fraction[0])
             y = int(fraction[1])
             if x > y:
