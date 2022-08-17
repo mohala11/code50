@@ -1,14 +1,15 @@
 def main():
     text = "Greeting: "
-    greeting = str.lower(input(text).strip())
+    greeting = input(text)
     result = value(greeting)
     print(f"${result}")
 
 
 def value(greeting):
-    if greeting.startswith("hello"):
+    var = str(greeting).lower().strip()
+    if var.startswith("hello"):
         return 0
-    elif greeting.startswith("h"):
+    elif var.startswith("h"):
         return 20
     else:
         return 100
