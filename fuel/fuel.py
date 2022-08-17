@@ -15,7 +15,7 @@ def convert(promt):
             elif y == 0:
                 raise ZeroDivisionError
             else:
-                return gauge(round(x / y * 100))
+                return round(x / y * 100)
         except ValueError:
             pass
         except ZeroDivisionError:
