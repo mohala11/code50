@@ -27,5 +27,10 @@ def test_noletters_nonumbers():
     assert is_valid("3124") == False
 
 
+def test_lenght():
+    assert is_valid("CS50") == True
+    assert is_valid("CSSSSSS67523525368238578238752") == False
+
+
 
 
