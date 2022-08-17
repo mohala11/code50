@@ -1,6 +1,7 @@
 def main():
-    fraction = convert()
-    print(gauge(fraction))
+    fraction = input("Fraction: ")
+    fraction_convert = convert(fraction)
+    print(gauge(fraction_convert))
 
 
 
@@ -20,13 +21,13 @@ def convert():
             pass
 
 
-def gauge(x):
-    if x >= 99:
+def gauge(fraction_convert):
+    if fraction_convert >= 99:
         return "F"
-    elif x <= 1:
+    elif fraction_convert <= 1:
         return "E"
     else:
-        return f"{x}%"
+        return f"{fraction_convert}%"
 
 
 if __name__ == "__main__":
