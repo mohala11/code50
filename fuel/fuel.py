@@ -31,5 +31,5 @@ def gauge(x):
         return f"{x}%"
 
 
-
-main()
+if __name__ == "__main__":
+    main()
