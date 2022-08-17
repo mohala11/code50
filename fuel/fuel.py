@@ -28,7 +28,7 @@ def gauge(x):
     elif x <= 1:
         return "E"
     else:
-        return "{x%"
+        return f"{x}%"
 
 
 
