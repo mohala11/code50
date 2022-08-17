@@ -1,5 +1,5 @@
 def main():
-    a = str(input("Fraction: "))
+    a = input("Fraction: ")
     x = convert(a)
     print(gauge(x))
 
