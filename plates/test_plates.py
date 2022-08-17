@@ -9,6 +9,10 @@ def test_correct_plates():
 
 def test_zerofirstnumber():
     assert is_valid("CS05") == False
+    assert is_valid("CSS000") == False
+
+
+def 
 
 
 
