@@ -18,7 +18,12 @@ def test_punctuation():
 
 
 def letter_after_number():
-    assert is_valid("CS50A")
+    assert is_valid("CS50A") == False
+    assert is_valid("CSS5AS") == False
+
+
+def noletters_nonumbers():
+    assert is_valid("CSDA")
 
 
 
