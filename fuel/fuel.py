@@ -1,14 +1,13 @@
 def main():
-    a = input("Fraction: ")
-    x = convert(a)
+    x = convert("Fraction: ")
     print(gauge(x))
 
 
 
-def convert(a):
+def convert(promt):
     while True:
         try:
-            fraction = a.split("/")
+            fraction = input(promt).split("/")
             x = int(fraction[0])
             y = int(fraction[1])
             if x > y:
@@ -17,8 +16,6 @@ def convert(a):
                 raise ZeroDivisionError
             else:
                 return round(x / y * 100)
-        except TypeError:
-            pass
         except ValueError:
             pass
         except ZeroDivisionError:
