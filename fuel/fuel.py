@@ -1,13 +1,13 @@
 def main():
-    fraction = convert()
-    print(gauge(fraction))
+    fraction = input("Fraction: ").split("/")
+    x = convert(fraction)
+    print(gauge(x))
 
 
 
-def convert():
+def convert(fraction):
     while True:
         try:
-            fraction = input("Fraction: ").split("/")
             if int(fraction[0]) > int(fraction[1]) and fraction.isalpha() == True:
                 raise ValueError
             elif int(fraction[1]) == 0:
