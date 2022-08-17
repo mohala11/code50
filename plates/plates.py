@@ -28,10 +28,10 @@ def is_valid(s):
     for i in range(x, len(s)):
         if s[i].isalpha():
             valid = False
-
     if valid == False:
         return False
     return True
 
 
-main()
+if __name__ == "__main__":
+    main()
