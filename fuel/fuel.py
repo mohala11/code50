@@ -5,17 +5,16 @@ def main():
 
 
 
-def convert():
+def convert(fraction):
     while True:
         try:
             x, y = fraction.split("/")
             f = int(x) / int(y)
-            if int(fraction[0]) > int(fraction[1]):
-                raise ValueError
-            elif int(fraction[1]) == 0:
-                raise ZeroDivisionError
+            if f <= 1:
+                return int(f*100)
             else:
-                return round(int(fraction[0]) / int(fraction[1]) * 100)
+                fraction = input("Fraction: ")
+                pass
         except (ValueError, ZeroDivisionError):
            raise
 
