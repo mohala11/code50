@@ -1,7 +1,8 @@
 def main():
     fraction = input("Fraction: ").split("/")
     x = convert(fraction)
-    print(gauge(x))
+    z = gauge(x)
+    print(z)
 
 
 
