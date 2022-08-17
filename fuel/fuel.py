@@ -8,7 +8,8 @@ def main():
 def convert():
     while True:
         try:
-            fraction = input("Fraction: ").split("/")
+            x, y = fraction.split("/")
+            f = int(x) / int(y)
             if int(fraction[0]) > int(fraction[1]):
                 raise ValueError
             elif int(fraction[1]) == 0:
