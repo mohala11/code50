@@ -16,10 +16,8 @@ def convert():
                 raise ZeroDivisionError
             else:
                 return round(int(fraction[0]) / int(fraction[1]) * 100)
-        except ValueError:
-            pass
-        except ZeroDivisionError:
-            pass
+        except (ValueError, ZeroDivisionError):
+           raise
 
 
 def gauge(fraction_convert):
