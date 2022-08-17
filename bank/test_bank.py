@@ -14,5 +14,5 @@ def test_value_h():
 
 def test_value_any():
     assert value("74287419784") == 100
-    assert value("nihao") == 100
+    assert value("NIHAO") == 100
     assert value("shdhfakjfja") == 100
