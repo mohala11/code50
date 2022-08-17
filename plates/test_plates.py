@@ -12,7 +12,13 @@ def test_zerofirstnumber():
     assert is_valid("CSS000") == False
 
 
-def 
+def test_punctuation():
+    assert is_valid("CS.50") == False
+    assert is_valid("PT,03") == False
+
+
+def letter_after_number():
+    assert is_valid("CS50A")
 
 
 
