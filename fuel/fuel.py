@@ -1,6 +1,6 @@
 def main():
-    x = convert("Fraction: ")
-    print(gauge(x))
+    fraction = convert("Fraction: ")
+    print(gauge(fraction))
 
 
 
