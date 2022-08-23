@@ -13,10 +13,15 @@ while True:
             i = 0
             with open(sys.argv[1]) as file:
                 for line in file:
+                    if line.startswith("#"):
+                        i = i
+                    elif line
+
                     i += 1
     except FileNotFoundError:
         sys.exit("File does not exist")
     finally:
         print(i)
+        break
 
 
