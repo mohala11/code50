@@ -15,7 +15,9 @@ while True:
                 for line in file:
                     if line.startswith("#"):
                         i = i
-                    elif line
+                    elif line.lstrip(" ") == "":
+                        i = i
+
 
                     i += 1
     except FileNotFoundError:
