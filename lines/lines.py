@@ -13,7 +13,7 @@ while True:
             i = 0
             with open(sys.argv[1]) as file:
                 for line in file:
-                    if line.startswith("#"):
+                    if line.lstrip()startswith("#"):
                         i = i
                     elif line.lstrip(" ") == "":
                         i = i
