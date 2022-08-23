@@ -15,7 +15,7 @@ while True:
                 for line in file:
                     if line.lstrip(" ").startswith("#"):
                         i = i
-                    elif line.lstrip(" ") == "":
+                    elif line.isspace():
                         i = i
                     else:
                         i += 1
