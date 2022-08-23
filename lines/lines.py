@@ -13,13 +13,12 @@ while True:
             i = 0
             with open(sys.argv[1]) as file:
                 for line in file:
-                    if line.lstrip()startswith("#"):
+                    if line.lstrip(" ").startswith("#"):
                         i = i
                     elif line.lstrip(" ") == "":
                         i = i
-
-
-                    i += 1
+                    else:
+                        i += 1
     except FileNotFoundError:
         sys.exit("File does not exist")
     finally:
