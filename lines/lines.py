@@ -16,5 +16,5 @@ while True:
                     i += 1
     except FileNotFoundError:
         sys.exit("File does not exist")
-    print(i)
+    
 
