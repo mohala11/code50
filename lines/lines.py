@@ -1,6 +1,6 @@
 import sys
 
-i = o
+i = 0
 
 with open(sys.argv[1]) as file:
     for line in file:
