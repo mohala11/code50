@@ -13,8 +13,7 @@ while True:
         else:
             with open(sys.argv[1]) as file:
                 reader = csv.DictReader(file)
-                
-                print(tabulate(reader, tablefmt="grid"))
+                print(tabulate(reader, headers="firstrow", tablefmt="grid"))
                 break
     except FileNotFoundError:
         sys.exit("File does not exist")
