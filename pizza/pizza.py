@@ -6,7 +6,9 @@ import csv
 def main():
     check_cvs_file()
     try:
-        
+        with open(sys.argv[1]) as file:
+            reader = csv.reader(file)
+            
 
 
 
