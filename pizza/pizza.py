@@ -11,6 +11,7 @@ while True:
             sys.exit("Not a Python file")
         else:
             with open(sys.argv[1]) as file:
+                reader = csv.DictReader(file)
                 print(tabulate(table, headers, tablefmt="grid"))
                 break
     except FileNotFoundError:
