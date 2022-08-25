@@ -13,6 +13,7 @@ while True:
         else:
             with open(sys.argv[1]) as file:
                 reader = csv.DictReader(file)
+                
                 print(tabulate(reader, tablefmt="grid"))
                 break
     except FileNotFoundError:
