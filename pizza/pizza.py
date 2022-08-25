@@ -14,8 +14,7 @@ while True:
             pizza = []
             with open(sys.argv[1]) as file:
                 for line in file:
-                    header1, header2, header3 = line.rstrip().split(",")
-                    pizza = 
+                    
                 print(tabulate(reader, headers="firstrow", tablefmt="grid"))
                 break
     except FileNotFoundError:
