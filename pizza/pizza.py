@@ -11,8 +11,11 @@ while True:
         elif sys.argv[1].endswith(".csv") == False:
             sys.exit("Not a Python file")
         else:
+            pizza = []
             with open(sys.argv[1]) as file:
                 reader = csv.DictReader(file)
+                for row in reader:
+                    
                 print(tabulate(reader, headers="firstrow", tablefmt="grid"))
                 break
     except FileNotFoundError:
