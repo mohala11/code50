@@ -13,11 +13,11 @@ while True:
         else:
             pizza = []
             with open(sys.argv[1]) as file:
-                for line in file:
-                    
-                print(tabulate(reader, headers="firstrow", tablefmt="grid"))
-                break
+                reader = csv.reader(file)
+                for row in reader:
+                    pizza.append(row)
     except FileNotFoundError:
         sys.exit("File does not exist")
+    print(tabulate(pizza[1:], headers=pizza[0], tablefmt="grid"))
 
 
