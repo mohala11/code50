@@ -4,7 +4,7 @@ import csv
 
 
 def main():
-    check_cvs_file()
+    check_csv_file()
     try:
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
@@ -16,7 +16,7 @@ def main():
     print(tabulate(pizza[1:], headers=pizza[0], tablefmt="grid"))
 
 
-def check_cvs_file():
+def check_csv_file():
         if len(sys.argv) == 1:
             sys.exit("Too few command-line arguments")
         elif len(sys.argv) > 2:
