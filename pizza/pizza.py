@@ -15,7 +15,7 @@ while True:
             with open(sys.argv[1]) as file:
                 reader = csv.DictReader(file)
                 for row in reader:
-                    
+                    pizza.append()
                 print(tabulate(reader, headers="firstrow", tablefmt="grid"))
                 break
     except FileNotFoundError:
