@@ -8,9 +8,12 @@ def main():
     try:
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
-            
-
-
+            pizza = []
+            for row in reader:
+                pizza.append(row)
+    except FileNotFoundError:
+        sys.exit("File does not exist")
+    print(tabulate(pizza[1:], headers=pizza[0], tablefmt="grid"))
 
 
 def check_cvs_file():
@@ -23,13 +26,15 @@ def check_cvs_file():
             sys.exit("Not a Python file")
 
 
+if __name__ == "__main__":
+    main()
 
 
 
-    else:
 
-except FileNotFoundError:
-    sys.exit("File does not exist")
+
+
+
 
 
 
