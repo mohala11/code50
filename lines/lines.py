@@ -19,11 +19,7 @@ while True:
             i = 0
             with open(sys.argv[1]) as file:
                 for line in file:
-                    if line.lstrip(" ").startswith("#"):
-                        i = i
-                    elif line.isspace():
-                        i = i
-                    else:
+                    if not line.lstrip(" ").startswith("#") and not line.isspace():
                         i += 1
     except FileNotFoundError:
         sys.exit("File does not exist")
