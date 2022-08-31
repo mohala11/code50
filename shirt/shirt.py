@@ -7,7 +7,8 @@ def main():
     image = Image.open(sys.argv[1])
     shirt = Image.open("shirt.png")
     size = shirt.size
-    image_r = ImageOps.fit(image, size)
+    image_r = ImageOps.fit(image, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+    
 
 
 
