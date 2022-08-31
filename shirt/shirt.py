@@ -10,10 +10,7 @@ def main():
     size = shirt.size
     image_r = ImageOps.fit(image, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
     photo.paste(image_r, shirt)
-    
-
-
-
+    Image.save(sys.argv[2])
 
 
 def check_image_file():
