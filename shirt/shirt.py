@@ -1,7 +1,7 @@
 import sys
 from PIL import Image
 import pathlib
-import splitext
+from os import splitext
 
 def main():
     check_image_file()
