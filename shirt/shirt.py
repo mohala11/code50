@@ -4,13 +4,13 @@ from os.path import splitext
 
 def main():
     check_image_file()
-    image = Image.open(sys.argv[1])
-    shirt = Image.open("shirt.png")
-    photo = Image.open(sys.argv[2])
-    size = shirt.size
-    image_r = ImageOps.fit(image, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-    photo.paste(image_r, shirt)
-    Image.save(sys.argv[2])
+    try:
+        image = Image.open(sys.argv[1])
+        shirt = Image.open("shirt.png")
+        size = shirt.size
+        image_r = ImageOps.fit(image, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        photo.paste(image_r, shirt)
+        Image.save(sys.argv[2])
 
 
 def check_image_file():
