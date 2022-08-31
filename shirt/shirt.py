@@ -11,9 +11,9 @@ def check_image_file():
             sys.exit("Too few command-line arguments")
         if len(sys.argv) > 3:
             sys.exit("Too many command-line arguments")
-        if not sys.argv[1][-4:].lower() in [".jpg", ".jpeg", ".png"]:
+        if sys.argv[1][-4:].lower() not in [".jpg", ".jpeg", ".png"]:
             sys.exit("Invalid input")
-        if not sys.argv[2][-4:].lower() in [".jpg", ".jpeg", ".png"]:
+        if sys.argv[2][-4:].lower() not in [".jpg", ".jpeg", ".png"]:
             sys.exit("Invalid input")
         if pathlib.Path(sys.argv[1].lower()).suffix != pathlib.Path(sys.argv[2].lower()).suffix:
             sys.exit("Input and output have different extensions")
