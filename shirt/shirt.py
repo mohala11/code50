@@ -1,7 +1,7 @@
 import sys
 from PIL import Image
 import pathlib
-from os import splitext
+from os.path import splitext
 
 def main():
     check_image_file()
@@ -14,12 +14,18 @@ def check_image_file():
             sys.exit("Too many command-line arguments")
         file1 = splitext(sys.argv[1])
         file2 = splitext(sys.argv[2])
+        if check_ext
         if sys.argv[1][-4:].lower() not in [".jpg", "jpeg", ".png"]:
             sys.exit("Invalid input")
         if sys.argv[2][-4:].lower() not in [".jpg", "jpeg", ".png"]:
             sys.exit("Invalid input")
         if pathlib.Path(sys.argv[1].lower()).suffix != pathlib.Path(sys.argv[2].lower()).suffix:
             sys.exit("Input and output have different extensions")
+
+
+def check_ext(file):
+
+
 
 
 main()
