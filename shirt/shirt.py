@@ -1,11 +1,13 @@
 import sys
-from PIL import Image
+from PIL import Image ImageOps
 from os.path import splitext
 
 def main():
     check_image_file()
     image = Image.open(sys.argv[1])
-    
+    shirt = Image.open("shirt.png")
+    size = shirt.size
+    image_r = ImageOps.fit()
 
 
 
