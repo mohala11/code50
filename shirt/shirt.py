@@ -11,5 +11,8 @@ def check_image_file():
             sys.exit("Too few command-line arguments")
         elif len(sys.argv) > 3:
             sys.exit("Too many command-line arguments")
-        elif sys.argv[1].lower().endswith() and sys.argv[2].endswith(".csv") == False:
-            sys.exit("Not a CSV file")
+        elif not sys.argv[1-2].lower().endswith(".jpg") or sys.argv[1-2].lower().endswith(".jpeg") or sys.argv[1-2].lower().endswith(".png"):
+            sys.exit("пошел нахуй")
+
+
+main()
