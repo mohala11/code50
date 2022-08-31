@@ -4,6 +4,8 @@ from os.path import splitext
 
 def main():
     check_image_file()
+    
+
 
 
 def check_image_file():
@@ -11,8 +13,8 @@ def check_image_file():
             sys.exit("Too few command-line arguments")
         if len(sys.argv) > 3:
             sys.exit("Too many command-line arguments")
-        file1 = splitext(sys.argv[1])
-        file2 = splitext(sys.argv[2])
+        file1 = splitext(sys.argv[1].lower())
+        file2 = splitext(sys.argv[2].lower())
         if check_ext(file1[1]) == False:
             sys.exit("Invalid input")
         if check_ext(file2[1]) == False:
@@ -22,7 +24,7 @@ def check_image_file():
 
 
 def check_ext(file):
-    if file in [".jpg", "jpeg", ".png"]:
+    if file in [".jpg", ".jpeg", ".png"]:
         return True
     return False
 
