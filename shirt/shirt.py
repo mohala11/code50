@@ -6,11 +6,13 @@ def main():
     check_image_file()
     try:
         image = Image.open(sys.argv[1])
-        shirt = Image.open("shirt.png")
-        size = shirt.size
-        image_r = ImageOps.fit(image, size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-        photo.paste(image_r, shirt)
-        Image.save(sys.argv[2])
+    except FileNotFoundError:
+        sys.exit("Input does not exist")
+    shirt = Image.open("shirt.png")
+    size = shirt.size
+    image_r = ImageOps.fit(image, size)
+    image_r.paste(shirt, shirt)
+    Image.save(sys.argv[2])
 
 
 def check_image_file():
