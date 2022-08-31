@@ -1,5 +1,5 @@
 import sys
-from PIL import Image ImageOps
+from PIL import Image, ImageOps
 from os.path import splitext
 
 def main():
@@ -7,7 +7,7 @@ def main():
     image = Image.open(sys.argv[1])
     shirt = Image.open("shirt.png")
     size = shirt.size
-    image_r = ImageOps.fit()
+    image_r = ImageOps.fit(image, size)
 
 
 
