@@ -12,7 +12,7 @@ def main():
     size = shirt.size
     image_r = ImageOps.fit(image, size)
     image_r.paste(shirt, shirt)
-    Image.save(sys.argv[2])
+    image_r.save(sys.argv[2])
 
 
 def check_image_file():
@@ -34,8 +34,6 @@ def check_ext(file):
     if file in [".jpg", ".jpeg", ".png"]:
         return True
     return False
-
-
 
 
 main()
